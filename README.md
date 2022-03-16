@@ -9,8 +9,8 @@ I used a Simpson's API for this example
 ### Clone the repo
 
 ```shell
-git clone https://github.com/marcode24/
-cd
+git clone https://github.com/marcode24/Scroll-infinite-Angular
+cd Scroll-infinite-Angular
 ```
 
 ### Install npm packages
