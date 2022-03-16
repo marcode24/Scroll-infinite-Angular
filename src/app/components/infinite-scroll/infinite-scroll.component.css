@@ -1,0 +1,20 @@
+.no-hidden{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  visibility: visible;
+}
+
+.image-card {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin: auto;
+}
+
+.spinner-border {
+  display: block;
+  margin: auto;
+  width: 5rem;
+  height: 5rem;
+}

@@ -1,0 +1,20 @@
+<div class="container" infiniteScroll [infiniteScrollDistance]="2" (scrolled)="onScroll()">
+  <h1 class="text-center my-3"> Infinite Scroll Example </h1>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" *ngIf="loading"></div>
+  </div>
+  <div class="row" *ngIf="characters">
+    <div class="col-md-3 my-3" *ngFor="let character of characters; index as i">
+      <div class="card">
+        <h5 class="card-header">{{ character.character + i }}</h5>
+        <div class="card-body">
+          <p class="card-text"> {{ character.quote }} </p>
+          <img [src]="character.image" alt="no image" class="image-card">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button [ngClass]="'no-hidden'" *ngIf="showGoUpButton" class="btn btn-dark" (click)="scrollTop()">GO UP</button>
